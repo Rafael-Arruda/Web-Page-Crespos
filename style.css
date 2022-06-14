@@ -122,6 +122,81 @@ header {
     color: white;
 }
 
+.instructions {
+    width: 100%;
+    height: 190vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.instructions img {
+    width: 40vw;
+}
+
+.content {
+    background-color: #9767A9;
+    color: white;
+    width: 30vw;
+    padding: 1.5vw;
+    position: relative;
+    top: -10vw;
+    left: 5vw;
+}
+.content h2 {
+    font-family: 'Playfair Display', serif;
+    width: 25vw;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+.content p {
+    width: 100%;
+    font-size: 1vw;
+    font-weight: 200;
+}
+
+.instruction-one, .instruction-two, .instruction-three, .instruction-four, .instruction-five, .instruction-six, .instruction-seven {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    position: relative;
+}
+
+.instruction-one {
+    top: -5vw;
+}
+.instruction-two {
+    top: 14vw;
+}
+.instruction-three {
+    top: -8vw;
+}
+.instruction-four {
+    top: 10vw;
+}
+.instruction-five {
+    top: -9vw;
+}
+.instruction-six {
+    top: 7vw;
+}
+.instruction-seven {
+    top: -12vw;
+}
+
+.cacho {
+    width: 40vw;
+    height: 10vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 8vw;
+}
+.cacho img {
+    width: 30vw;
+}
+
+
 @media(max-width: 800px){
     header {
         height: 10vh;
@@ -187,5 +262,44 @@ header {
         margin-top: 2vw;
     }
 
+    .instruction-one, .instruction-two, .instruction-three, .instruction-four, .instruction-five, .instruction-six, .instruction-seven {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        top: 1vw;
+    }
+
+    .instructions img {
+        width: 70vw;
+    }
+    .content {
+        top: -1vw;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content h2 {
+        width: 70vw;
+        font-size: 6vw;
+        margin-bottom: 0;
+    }
+    .content p {
+        width: 70vw;
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+
+    .cacho {
+        top: 0;
+        width: 70vw;
+        margin: 5vw 0;
+    }
+    .cacho img {
+        width: 50vw;
+    }
 
 }
