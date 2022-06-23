@@ -59,11 +59,10 @@ header {
     border-radius: 20px;
     border: 2.5px solid #9767A9;
     outline: none;
-    text-align: center;
     color: #9767A9;
     font-size: 1vw;
     width: 12vw;
-    padding: 0.4vw;
+    padding: 0.4vw 2vw;
 }
 
 .social-networks-list {
@@ -127,9 +126,10 @@ header {
     color: white;
 }
 
+/*Div instructions*/
+
 .instructions {
     width: 100%;
-    height: 190vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -143,9 +143,9 @@ header {
     color: white;
     width: 30vw;
     padding: 1.5vw;
+    margin: 0 auto;
     position: relative;
     top: -10vw;
-    left: 5vw;
 }
 .content h2 {
     font-family: 'Playfair Display', serif;
@@ -159,43 +159,47 @@ header {
     font-weight: 200;
 }
 
-.instruction-one, .instruction-two, .instruction-three, .instruction-four, .instruction-five, .instruction-six, .instruction-seven {
+.instruction-one, 
+.instruction-two, 
+.instruction-three, 
+.instruction-four, 
+.instruction-five, 
+.instruction-six, 
+.instruction-seven {
     margin-left: 1vw;
     margin-right: 1vw;
-    position: relative;
 }
 
-.instruction-one {
-    top: -5vw;
+.instruction-one{
+    margin-top: -4vw;
 }
 .instruction-two {
-    top: 14vw;
+    margin-top: 15vw;
 }
 .instruction-three {
-    top: -8vw;
+    margin-top: -22vw;
 }
 .instruction-four {
-    top: 10vw;
+    margin-top: -3vw;
 }
 .instruction-five {
-    top: -9vw;
+    margin-top: -19vw;
 }
 .instruction-six {
-    top: 7vw;
+    margin-top: -3vw;
 }
 .instruction-seven {
-    top: -12vw;
+    margin-top: -19vw;
+}
+.instruction-seven .content {
+    top: -7vw;
 }
 
 .cacho {
     width: 40vw;
     height: 10vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 8vw;
 }
 .cacho img {
     width: 30vw;
@@ -267,7 +271,15 @@ header {
         margin-top: 2vw;
     }
 
-    .instruction-one, .instruction-two, .instruction-three, .instruction-four, .instruction-five, .instruction-six, .instruction-seven {
+    /*instructions*/
+    
+    .instruction-one, 
+    .instruction-two, 
+    .instruction-three, 
+    .instruction-four, 
+    .instruction-five, 
+    .instruction-six, 
+    .instruction-seven {
         width: 100%;
         display: flex;
         align-items: center;
@@ -275,13 +287,11 @@ header {
         margin: 0;
         top: 1vw;
     }
-
     .instructions img {
         width: 70vw;
     }
     .content {
         top: -1vw;
-        left: 0;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -298,13 +308,5 @@ header {
         margin-top: 2vw;
     }
 
-    .cacho {
-        top: 0;
-        width: 70vw;
-        margin: 5vw 0;
-    }
-    .cacho img {
-        width: 50vw;
-    }
 
 }
