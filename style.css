@@ -205,6 +205,152 @@ header {
     width: 30vw;
 }
 
+/*grid of pictures*/
+
+.grid-of-pictures {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3vw;
+}
+.grid-1, .grid-2 {
+    position: relative;
+    height: 40vw;
+}
+.grid-1{
+    width: 35%;
+}
+.grid-2{
+    width: 45%;
+}
+.grid-1 img, .grid-2 img {
+    position: absolute;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.grid-1 img:hover, .grid-2 img:hover {
+    transform: scale(1.05);
+}
+.grid-1 img {
+    padding: 0.4vw 0.6vw;
+}
+.grid-2 img {
+    padding: 0.4vw 0.7vw 0.4vw 0.15vw;
+}
+
+.copia52 {
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 70%;
+}
+.gloriamaria {
+    bottom: 0;
+    width: 20vw;
+    height: 30%;
+}
+.copia54 {
+    right: 0;
+    width: 15vw;
+    height: 35%;
+}
+.copia53 {
+    top: 14vw;
+    right: 0;
+    width: 15vw;
+    height: 35%;
+}
+.copia14 {
+    right: 0;
+    bottom: 0;
+    width: 15vw;
+    height: 30%;
+}
+
+.copia9 {
+    right: 0;
+    bottom: 0;
+    width: 12vw;
+    height: 70%;
+}
+.copia10 {
+    left: 12vw;
+    width: 20.5vw;
+    height: 100%;
+}
+.copia11 {
+    top: 0;
+    left: 0;
+    width: 12vw;
+    height: 70%;
+}
+.copia12 {
+    top: 0;
+    right: 0;
+    width: 12vw;
+    height: 30%;
+}
+.snoopydog {
+    bottom: 0;
+    width: 12vw;
+    height: 30%;
+}
+
+/*footer*/
+
+footer {
+    height: 12vh;
+    padding: 0 4vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #9767A9;
+}
+.navigation-footer {
+    width: 24%;
+    height: 80%;
+}
+.social-networks-footer {
+    display: none;
+}
+.redirect-buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.redirect-buttons div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.redirect-buttons div:hover {
+    background: rgba(247, 244, 244, 0.4);
+}
+.redirect-buttons p {
+    width: 5vw;
+    text-align: center;
+    color: #fff;
+    font-size: 1vw;
+}
+.redirect-buttons img {
+    width: 1.8vw;
+}
+
+.copyright {
+    width: 50%;
+}
+.copyright h6 {
+    display: none;
+}
+.copyright p {
+    font-size: 0.8vw;
+    color: #fff;
+}
+
 
 @media(max-width: 800px){
     header {
@@ -272,7 +418,7 @@ header {
     }
 
     /*instructions*/
-    
+
     .instruction-one, 
     .instruction-two, 
     .instruction-three, 
@@ -307,6 +453,66 @@ header {
         font-size: 3vw;
         margin-top: 2vw;
     }
+    .cacho {
+        width: 70vw;
+        margin-bottom: 5vw;
+    }
+    .cacho img {
+        width: 50vw;
+    }
 
+    /*footer*/
+
+    footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 30vw;
+        padding: 0;
+        background-color: #fff;
+    }
+    .navigation-footer {
+        width: 80%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .social-networks-footer {
+        display: flex;
+        width: 23%;
+    }
+    .social-networks-list-footer{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .social-networks-list-footer img {
+        width: 5vw;
+    }
+    .redirect-buttons {
+        width: 20%;
+    }
+    .redirect-buttons p {
+        display: none;
+    }
+    .redirect-buttons img {
+        width: 4vw;
+        background-color: #9767A9;
+        border-radius: 100%;
+    }
+    
+    .copyright {
+        width: 80%;
+    }
+    .copyright h6 {
+        display: flex;
+        font-size: 1.5vw;
+    }
+    .copyright p {
+        font-size: 1.5vw;
+        color: #000;
+    }
+    
 
 }
